@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(194, 194, 194);
+    width: 100vw;
+}
+header h1 {
+    font-size: 4rem;
+}
+header{
+    font-family: monospace;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    margin-top: 5%;
+}
+header ul{
+    display: flex;
+}
+header ul li, header ul a{
+    padding: 10px;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    list-style: none;
+}
+.top-space{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 75vh;
+    background: rgb(33, 155, 255);
+}
+main{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    flex-direction: column;
+}
+.container{
+    flex-wrap: wrap;
+    z-index: 3;
+    display: flex;
+    justify-content: space-around;
+    height: 65vh;
+    width: 90vw;
+    margin: 0 auto;
+    margin-top: 5%;
+    background: rgb(255, 255, 255);
+    align-items: center;
+}
+.carImageContainer img{
+    width: 50vw;
+}
+.description h2{
+    font-family: monospace;
+    text-transform: uppercase;
+    font-size: 2.7rem;
+    padding: 10px;
+    color:rgb(33, 155, 255);
+}
+.description p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    padding: 10px;
+    
+}
+.description button, .description input{
+    height: 35px;
+    margin-top: 40px;
+    border-radius:5px;
+    border: 1px solid black;
+}
+.description button{
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-weight: 800;
+    background-color: rgb(39, 39, 39);
+    width: 25%;
+}
+.description button:hover{
+    background-color: rgb(94, 94, 94);
+
+}
+.description input{
+    width: 70%;
+}
+.description input::placeholder {
+    font-weight: 800;
+    font-size: 1.1rem;
+    padding: 10px;
+}
+.selected{
+    text-decoration: underline;
+}
+
+span{
+    color: yellow;
+}
+
+@media(max-width:1600px){
+    .carImageContainer img{
+
+        margin-top: 30px;
+    }
+}
+
+@media(max-width:750px){
+    header ul{
+        display: none;
+    }
+    .container{
+        width: 100vw;
+        text-align: center;
+    }
+    .inputs{
+        display: flex;
+        flex-direction: column;
+    }
+    .inputs input, .inputs button{
+        width: 90vw;
+        margin: 15px auto;
+    }
+
+    .carImageContainer img{
+        width: 90vw;
+        margin-top: 30px;
+    }
+}
